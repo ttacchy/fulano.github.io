@@ -1,23 +1,20 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Carousel</title>
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uasr um evento de clique em JavaScript</title>
 </head>
-<body>
-    <div class="carousel">
-        <div class="carousel-images">
-            <img src="1.jpg" alt="Image 1">
-            <img src="2.jpg" alt="Image 2">
-            <img src="3.jpg" alt="Image 3">
-        </div>
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
-    </div>
 
-    <script src="script.js"></script>
+<body>
+    <button id="btn">Clique aqui</button>
+    <script>
+        document.geElementById("btn").addEventListener("click",
+            function () {
+                alert("Hello, World!");
+            }
+        );
+    </script>
 </body>
+
 </html>
